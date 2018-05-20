@@ -1,9 +1,45 @@
+.navbar{
+  font-size: 50px;
+}
+
+.toGuess{
+  background-color:lemonchiffon;
+  width:300px;
+  padding:50px;
+  margin-top:-31px;
+  float: left;
+
+}
+
+.totals{
+  background-color:#777;
+  padding:50px;
+  width:250px;
+  float:left;
+  margin-top:-31px;
+}
+
+.score{
+  background-color:rebeccapurple;
+  text-align: center;
+  padding:60px;
+  color:#fff;
+  position:absolute;
+  top:412px;
+  margin-left:550px;
+}
+
+.crystals{
+  float:left;
+  margin-top: 30px;
+}
+
 #crystal-image {
     width: 150px;
     height: 150px;
   }
 
 .crystal4{
-      width: 175px;
-      height: 175px;
+      width: 200px;
+      height: 250px;
   }
