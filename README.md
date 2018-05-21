@@ -23,7 +23,7 @@ Here's how the app works:
 
    * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
 
-##### Option 1 Game design notes
+##### Design notes
 
 * The random number shown at the start of the game should be between 19 - 120.
 
