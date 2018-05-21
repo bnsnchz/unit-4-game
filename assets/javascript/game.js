@@ -5,17 +5,17 @@ $("#number-to-guess").text(Random);
 
 var counter = 0;
 var wins = 0;
-var loses = 0;
+var losses = 0;
 var numberOption1 = Math.floor(Math.random() * 12)+1;
-var numberOption2 = Math.floor(Math.random() * 12)+1;
+var numberOption2 = Math.floor(Math.random() * 12)+1; 
 var numberOption3 = Math.floor(Math.random() * 12)+1;
 var numberOption4 = Math.floor(Math.random() * 12)+1; 
 
-$("numberWins").text(wins);
-$("numberLosses").text(loses);
+$("#numberWins").text(wins);
+$("#numberLosses").text(losses);
 
 function reset(){
-    targetNumber = Math.floor(Math.random()* (120 - 19)+19)
+   Random = Math.floor(Math.random()* (120 - 19)+19)
     console.log(Random);
     $("#number-to-guess").text(Random);
     var numberOption1 = Math.floor(Math.random() * 12)+1;
@@ -23,20 +23,20 @@ function reset(){
     var numberOption3 = Math.floor(Math.random() * 12)+1;
     var numberOption4 = Math.floor(Math.random() * 12)+1; 
     counter= 0;
-    $("#counter").text(counter);
+    $("#total").text(counter);
     } 
 
     function winner(){
         alert("You won!");
           wins++; 
-          $('#numberWins').text(wins);
+          $("#numberWins").text(wins);
           reset();
         }
        
     function loser(){
         alert ("You lose!");
           losses++;
-          $('#numberLosses').text(losses);
+          $("#numberLosses").text(losses);
           reset();
         }
 
@@ -47,10 +47,13 @@ $("#crystal1").on ("click", function(){
     $("#total").text(counter); 
           if (counter == Random){
           winner();
+          
         }
         else if ( counter > Random){
           loser();
+          
         }   
+       
   })  
   $("#crystal2").on ("click", function(){
     counter = counter + numberOption2;
@@ -58,9 +61,11 @@ $("#crystal1").on ("click", function(){
     $("#total").text(counter); 
         if (counter == Random){
           winner();
+          
         }
         else if ( counter > Random){
           loser();
+          
         } 
   })  
   $("#crystal3").on ("click", function(){
@@ -70,9 +75,11 @@ $("#crystal1").on ("click", function(){
 
           if (counter == Random){
           winner();
+          
         }
         else if ( counter > Random){
           loser();
+          
         } 
   })  
   $("#crystal4").on ("click", function(){
@@ -82,9 +89,11 @@ $("#crystal1").on ("click", function(){
       
           if (counter == Random){
           winner();
+          
         }
-        else if ( counter > Random){
+        else if (counter > Random){
           loser();
+          
         }
   });   
 });

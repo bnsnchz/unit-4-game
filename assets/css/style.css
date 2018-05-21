@@ -24,22 +24,18 @@
   text-align: center;
   padding:60px;
   color:#fff;
-  position:absolute;
-  top:412px;
-  margin-left:550px;
+  float:left;
+  height:204px;
+  margin-top:-31px;
+
 }
 
 .crystals{
-  float:left;
-  margin-top: 30px;
+  position:absolute;
+  margin-top: 200px;
 }
 
 #crystal-image {
-    width: 150px;
-    height: 150px;
-  }
-
-.crystal4{
-      width: 200px;
-      height: 250px;
+    width: 100px;
+    height: 100px;
   }
